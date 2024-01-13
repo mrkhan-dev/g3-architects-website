@@ -1,10 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+
+/* shared styles */
 * {
   font-family: "Work Sans";
   margin: 0;
   padding: 0;
 }
 
+.section-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.text-light-gray {
+  margin-top: 20px;
+  color: #727272;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.btn-primary {
+  margin-top: 32px;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+/* header section start */
 header {
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
@@ -31,12 +59,6 @@ nav li > a {
   color: #424242;
 }
 
-.nav-title {
-  color: #131313;
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
 .banner-content {
   max-width: 800px;
   margin: 116px auto 0 auto;
@@ -47,25 +69,6 @@ nav li > a {
   font-size: 4rem;
   font-weight: 700;
   color: #131313;
-}
-
-.banner-description {
-  margin-top: 20px;
-  color: #727272;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.6rem;
-}
-
-.btn-primary {
-  margin-top: 32px;
-  padding: 20px 25px;
-  font-size: 1.25rem;
-  border-radius: 8px;
-  background: #ff900e;
-  color: #fff;
-  border: 0;
-  cursor: pointer;
 }
 
 .banner img {
@@ -124,12 +127,44 @@ main {
   padding-right: 127px;
 }
 
-.teams-descriptions {
-  margin-top: 1.25rem;
+/* Facts Section start */
+.facts-title {
+  margin-top: 8.125rem;
+}
+.facts-descriptions {
+  font-size: 1rem;
+  margin-top: 24px;
+  width: 542px;
+  margin-bottom: 6.3rem;
+}
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-card {
+  padding: 2.8rem 2.18rem 3.68rem 2.18rem;
+  justify-content: center;
+  text-align: center;
+  /* width: 241.831px;
+  height: 241.831px; */
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+
+.card-stats {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.card-title {
   color: #727272;
-  font-family: Work Sans;
-  font-weight: 400;
-  line-height: 26px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* Responsive Media Query */
@@ -145,6 +180,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .facts-card-container,
   .teams-container,
   nav {
     flex-direction: column;
@@ -178,6 +214,19 @@ main {
     width: 100%;
     height: auto;
   }
+
+  /* facts section */
+  .facts {
+    padding: 0 20px;
+  }
+
+  .facts-descriptions {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .facts-card-container {
+    gap: 10px;
+  }
 }
 
 /* Medium Device, like Tablet */
@@ -202,7 +251,21 @@ main {
     margin-top: 50px;
   }
 
+  .teams-content {
+    padding: 30px;
+  }
+
   .teams-mig-container {
     padding: 0;
+  }
+
+  .facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .facts {
+    padding: 0 30px;
   }
 }
