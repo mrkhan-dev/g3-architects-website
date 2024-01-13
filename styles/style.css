@@ -83,7 +83,7 @@ main {
   margin: 85px auto;
 }
 
-/* Feature section */
+/* team section */
 .teams-container {
   display: flex;
   align-items: center;
@@ -125,6 +125,69 @@ main {
 
 .teams-title {
   padding-right: 127px;
+}
+
+/* feature section */
+.feature {
+  margin-top: 130px;
+  gap: 146px;
+  display: flex;
+}
+
+.feature-descriptions {
+  font-size: 1rem;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.card {
+  margin-top: 39px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card h4 {
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 30px 302px 0 33px;
+}
+
+.card p {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 42px 30px 30px;
+  margin-bottom: 20px;
+}
+
+.ten-years-badge {
+  width: 342px;
+  height: 200px;
+  border-radius: 8px;
+  background: #ff900e;
+  position: relative;
+  bottom: 110px;
+  right: 100px;
+}
+
+.ten-years-badge h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 70px;
+  padding: 46px 42px 0 42px;
+}
+
+.ten-years-badge p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.56rem;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 /* Facts Section start */
