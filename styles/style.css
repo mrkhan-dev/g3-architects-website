@@ -167,6 +167,42 @@ main {
   font-weight: 600;
 }
 
+/* sponsor section */
+.sponsor {
+  text-align: center;
+  margin-top: 11.3rem;
+}
+
+.sponsor-description {
+  width: 542px;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: 24px;
+}
+
+.sponsor-logo-container {
+  margin-top: 3.12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* footer section */
+.footer-text {
+  border-radius: 8px;
+  background: #fff4e7;
+  text-align: center;
+  padding: 39px 410px;
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sponsor-logo-container img {
+  width: 165px;
+}
+
 /* Responsive Media Query */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
@@ -180,6 +216,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .sponsor-logo-container,
   .facts-card-container,
   .teams-container,
   nav {
@@ -195,6 +232,10 @@ main {
 
   nav > ul {
     margin-left: 20px;
+  }
+
+  main {
+    width: 100%;
   }
 
   .teams-content {
@@ -214,19 +255,30 @@ main {
     width: 100%;
     height: auto;
   }
+}
 
-  /* facts section */
-  .facts {
-    padding: 0 20px;
-  }
+/* facts section */
+.facts {
+  padding: 0 20px;
+}
 
-  .facts-descriptions {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .facts-card-container {
-    gap: 10px;
-  }
+.facts-descriptions {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.facts-card-container {
+  gap: 10px;
+}
+
+.sponsor-description {
+  max-width: 80%;
+  padding: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  max-width: 100%;
+  padding: 20px 30px;
 }
 
 /* Medium Device, like Tablet */
@@ -258,7 +310,6 @@ main {
   .teams-mig-container {
     padding: 0;
   }
-
   .facts-card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -267,5 +318,16 @@ main {
 
   .facts {
     padding: 0 30px;
+  }
+
+  .sponsor-logo-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsor-description {
+    padding: 0 30px;
+    text-align: center;
+    width: 80%;
   }
 }
